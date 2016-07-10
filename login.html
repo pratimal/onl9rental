@@ -1,0 +1,162 @@
+<html>
+<head>
+<script type="text/javascript">
+function clearDefault(a)
+{if(a.defaultValue==a.value)
+{a.value=""}};
+</script>
+  <style>
+ body{
+ 
+ font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+ }
+  .sep{
+   background-image:url("Images/bag1.jpg");
+   opacity:0.4;
+   color:mustard;
+background-repeat:x;
+ background-position:  top;
+  background-attachment: fixed;
+  }
+  h1{
+ 
+   border-left: 10px solid lime;
+   color:lime;
+   text-shadow: 2px 2px rgb(260, 190, 10);
+ text-indent: 50px;
+font-size:50px;
+
+    
+}
+#signup{
+
+ background-color:lavender;
+  border-width:5px;	
+    border-style:groove;
+	margin:auto;
+	padding:10px;
+	radius:5px;
+}
+
+
+.bod1
+{
+ background-color:ivory;
+border:1px solid black;
+}
+.bod
+{
+
+ width:200px;
+ background-color:ivory;
+}
+.pic{
+margin-left:140px;
+
+}
+.pi
+{
+list-style-type: none; 
+margin: 0;
+padding: 0;
+font: bold 12px Verdana, sans-serif;
+color:lavender;
+
+
+}
+.pi li{
+ display: inline; 
+ border-top: 1px solid gray;
+ }
+ .pi li a{
+ padding: 0.25em 0.5em 0.25em 0.75em;
+border-left: 1em solid #AAB;
+text-decoration: none;
+ }
+ 
+ .pi  li a:hover
+{
+color: #fff;
+text-align:center;
+width:150px; 
+background-color: #369;
+}
+html {
+background:url("Images/bag2.jpg") no-repeat center center fixed;
+background-size:cover;
+}
+
+
+  </style>
+
+</head>
+
+<body >
+  <marquee direction='left' onmouseover=this.stop(1)>24x7 servive available</marquee>
+ <table cellspacing="10" >
+ <tr class='sep'>
+ <td colspan="3" ><h1 class='head'>Kamdhenu Shopping Center</h1></td>
+ </tr>
+ <tr>
+ 
+ <td colspan="3" ><img class='pic' src="Images/im7.jpg"   alt="not found" width='900px' height='200px' style="width: 961px; "></td>
+ 
+ </tr>
+ 
+ 
+ <br>
+ <br>
+ 
+<tr >
+ <td  class='bod1'>
+   
+      <ul class='pi'>
+	
+      <li><a href="#">Stationary</a></li>
+       <li><a href="#">Grocery</a></li>
+       <li><a href="#">Dairy</a></li>
+       <li><a href="#">Clothing</a></li>
+       <li><a href="#">HomeItems</a></li>
+	    <li><a href="#">Fruits</a></li>
+       </ul>
+ </td>
+ </tr>
+ <tr>
+
+  <td class='bod'>
+   <form  action="servlet/login" method="post">
+   <fieldset>
+   <legend><u><b>Registration Form</u></b></legend>
+    <label>Username</label><input type="text" name="uname" value="*UserNmae" onFocus="clearDefault(this)" required><br><br>
+	<br>
+    <label>Password<label> <input type="password" name="pass" value="min lenght 4" onFocus="clearDefault(this)" required><br>
+	<br>
+            <input  type="submit" value="login">
+			</fieldset>
+   </form>
+  </td>
+  
+   <td>
+ </td>
+  <td>
+   <br><br>
+   
+   <form id='signup' action="signup.html" >
+   <legend ><u><i>New user ? Become a part of us</u><i></legend><br>
+   <br>
+         <input type="submit" value="Sign Up">
+		 
+   </form>
+ </td>
+
+ </tr>
+   
+   
+  
+  
+
+
+  </table>
+   </body>
+   </html>
+   
